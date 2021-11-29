@@ -1,0 +1,74 @@
+<mat-card class="card">
+  <mat-card-title>Pedido {{ order.id }}</mat-card-title>
+  <mat-card-content>
+    <table [hidden]="order.isDelivery === false">
+      <thead>
+        <tr>
+          <th colspan="2">Datos del Pedido</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Persona:</td>
+          <td>{{ order.name }}</td>
+        </tr>
+        <tr>
+          <td>Dirección:</td>
+          <td>{{ order.shippingAddress }}</td>
+        </tr>
+        <tr>
+          <td>Ciudad del envío:</td>
+          <td>{{ order.city }}</td>
+        </tr>
+        <tr>
+          <td>fecha del pedido:</td>
+          <td>{{ order.date }}</td>
+        </tr>
+        <tr>
+          <td>Tipo de pedido:</td>
+          <td>Delivery</td>
+        </tr>
+      </tbody>
+    </table>
+    <table [hidden]="order.isDelivery === true">
+      {{
+        getData()
+      }}
+      <thead>
+        <tr>
+          <th colspan="2">Datos del Pedido</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Persona:</td>
+          <td>{{ order.name }}</td>
+        </tr>
+        <tr>
+          <td>Dirección:</td>
+          <td>{{ address }}</td>
+        </tr>
+        <tr>
+          <td>Ciudad del envío:</td>
+          <td>{{ city }}</td>
+        </tr>
+        <tr>
+          <td>Nombre del Local:</td>
+          <td>{{ name }}</td>
+        </tr>
+        <tr>
+          <td>Horario del Local:</td>
+          <td>{{ openingHours }}</td>
+        </tr>
+        <tr>
+          <td>fecha del pedido:</td>
+          <td>{{ order.date }}</td>
+        </tr>
+        <tr>
+          <td>Tipo de pedido:</td>
+          <td>Pick Up</td>
+        </tr>
+      </tbody>
+    </table>
+  </mat-card-content>
+</mat-card>

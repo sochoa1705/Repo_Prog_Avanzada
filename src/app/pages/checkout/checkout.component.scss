@@ -1,0 +1,41 @@
+.container {
+  margin: 4.4rem auto 0;
+  width: 40%;
+  padding: 20px 20px 0 20px;
+  border-radius: 7px;
+  background-image: radial-gradient(
+    circle at 50% 50%,
+    #fffcf1 0,
+    #f5ecd6 16.67%,
+    #e4dcba 33.33%,
+    #cfcb9d 50%,
+    #b8bb81 66.67%,
+    #9fad6a 83.33%,
+    #86a155 100%
+  );
+  text-align: center;
+}
+
+.form {
+  &__element {
+    width: 100%;
+  }
+
+  .mat-radio-group {
+    display: block;
+  }
+
+  .mat-radio-button {
+    margin-right: 1rem;
+  }
+}
+
+.actions {
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+
+  &__btn {
+    width: 100%;
+  }
+}

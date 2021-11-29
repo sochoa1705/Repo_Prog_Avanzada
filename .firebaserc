@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "proygrupo1": {
+      "hosting": {
+        "store": [
+          "proygrupo1"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "proygrupo1"
+  }
+}

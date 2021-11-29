@@ -1,0 +1,40 @@
+.navbar {
+  /*display: flex;
+  justify-content: space-between;
+  left: 0;
+  position: fixed;
+  top: 0;
+  z-index: 1;*/
+  background-image: radial-gradient(
+    circle at 95.45% 104.17%,
+    #c97d35 0,
+    #c57139 10%,
+    #bc633b 20%,
+    #ae543c 30%,
+    #9b453a 40%,
+    #833535 50%,
+    #6b272f 60%,
+    #561c29 70%,
+    #441323 80%,
+    #360d1f 90%,
+    #2b091b 100%
+  );
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.shopping-cart {
+  align-items: center;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  display: flex;
+  padding: 0.1rem 0.5rem;
+  transition: background-color 0.25s ease-in-out;
+
+  &:hover {
+    background-color: #2b091b;
+  }
+}

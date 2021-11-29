@@ -1,0 +1,27 @@
+.container {
+  margin-top: 1rem;
+  background-image: linear-gradient(
+    175deg,
+    #e6d2d5 0,
+    #e3cad0 10%,
+    #dec0cc 20%,
+    #d9b7c8 30%,
+    #d1acc5 40%,
+    #c7a1c2 50%,
+    #bb97c0 60%,
+    #ad8ec0 70%,
+    #9e88c0 80%,
+    #8d83c1 90%,
+    #7a7fc1 100%
+  );
+  color: #ffff;
+  border-radius: 5px;
+  padding: 5px;
+  text-align: center;
+}
+.products {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
