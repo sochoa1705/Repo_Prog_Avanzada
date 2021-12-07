@@ -1,13 +1,15 @@
 import { ShoppingCartService } from './../../shared/services/shopping-cart.service';
 import { NgForm } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
-import { delay, switchMap, tap } from 'rxjs/operators';
+import { switchMap, tap } from 'rxjs/operators';
 import { Store } from 'src/app/shared/interfaces/stores.interface';
 import { DataService } from 'src/app/shared/services/data.service';
 import { Details, Order } from 'src/app/shared/interfaces/order.interface';
 import { Product } from '../products/interfaces/product.interface';
 import { Router } from '@angular/router';
 import { ProductsService } from '../products/services/products.service';
+import { AuthService } from 'src/app/shared/services/auth.service';
+import { getAuth } from "firebase/auth";
 
 @Component({
   selector: 'app-checkout',
@@ -15,6 +17,9 @@ import { ProductsService } from '../products/services/products.service';
   styleUrls: ['./checkout.component.scss']
 })
 export class CheckoutComponent implements OnInit {
+  auth = getAuth();
+  user = this.auth.currentUser;
+  email?:any;
   model = {
     name: '',
     store: '',
@@ -27,11 +32,13 @@ export class CheckoutComponent implements OnInit {
   isChangPage = false;
 
 
+
   constructor(
     private dataSvc: DataService,
     private shoppingCartSvc: ShoppingCartService,
     private router: Router,
     private productsSvc: ProductsService,
+    private authSvc: AuthService
   ) {
     this.checkIfCartIsEmpty();
   }
@@ -40,6 +47,10 @@ export class CheckoutComponent implements OnInit {
     this.getStores();
     this.getDataCart();
     this.prepareDetails();
+    if (this.user) {
+      this.email = this.user.email;
+      console.log(this.email);
+    }
   }
 
   onPickupOrDelivery(value: boolean): void {
@@ -51,6 +62,7 @@ export class CheckoutComponent implements OnInit {
     const data: Order = {
       ...formData,
       date: this.getCurrentDay(),
+      email:this.email,
       isDelivery: this.isDelivery
     }
     this.dataSvc.saveOrder(data)
@@ -63,7 +75,6 @@ export class CheckoutComponent implements OnInit {
         }),
         tap(() => this.shoppingCartSvc.resetCart()),
         tap(() => this.router.navigate(['/checkout/thank-you-page']))
-        // delay(7000),
       )
       .subscribe();
   }
@@ -102,9 +113,6 @@ export class CheckoutComponent implements OnInit {
         tap((products: Product[]) => this.cart = products)
       )
       .subscribe()
-
-
-
   }
 
   private checkIfCartIsEmpty(): void {

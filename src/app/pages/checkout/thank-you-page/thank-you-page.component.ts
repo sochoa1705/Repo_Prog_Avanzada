@@ -2,14 +2,14 @@ import { Component } from '@angular/core';
 import { Order } from 'src/app/shared/interfaces/order.interface';
 import { tap } from 'rxjs/operators';
 import { DataService }from 'src/app/shared/services/data.service';
+import { getAuth } from "firebase/auth";
 
 @Component({
   selector: 'app-thank-you-page',
   template: `
   <div class="container">
-    <h1 class="title">Gracias por haber realizado tu pedido!</h1>
+    <h1 class="title">Gracias por haber realizado tu pedido!!    Estas son tus ordenes realizadas:</h1>
   </div>
-    <p class="content">Estas son tus ordenes realizadas:</p>
   <section class="orders">
   <app-order
       [order]="order"
@@ -19,14 +19,22 @@ import { DataService }from 'src/app/shared/services/data.service';
   styleUrls: ['./thank-you-page.component.scss']
 })
 export class ThankYouPageComponent {
-  //todo mio
+  auth = getAuth();
+  user = this.auth.currentUser;
   orders!: Order[];
+  email?:any;
   constructor(private orderSvc: DataService) { }
 
   ngOnInit(): void {
-    this.orderSvc.getOrders()
+    if (this.user) {
+      this.email = this.user.email;
+      console.log(this.email);
+    }
+    this.orderSvc.getOrders(this.email)
       .pipe(
-        tap((orders: Order[]) => this.orders = orders)
+        tap((orders: Order[]) =>{
+          //console.log("Ordenes:"+orders)
+          this.orders = orders} )
       )
       .subscribe();
   }

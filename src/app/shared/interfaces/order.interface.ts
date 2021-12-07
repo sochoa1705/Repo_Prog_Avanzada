@@ -18,6 +18,7 @@ export interface Order {
   shippingAddress: string;
   city: string;
   date: string;
+  email: string;
   isDelivery: boolean;
   id: number;
 }

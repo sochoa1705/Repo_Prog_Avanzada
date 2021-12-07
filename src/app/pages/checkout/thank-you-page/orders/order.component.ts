@@ -13,11 +13,16 @@ export class OrderComponent {
   address!: string;
   city!: string;
   openingHours!:string;
+  //count:number=0;
 
   getData():void{
     this.name = this.order.store === undefined ? "" :this.order.store.name;
     this.address = this.order.store === undefined ? "" :this.order.store.address;
     this.city = this.order.store === undefined ? "" :this.order.store.city;
     this.openingHours = this.order.store === undefined ? "" :this.order.store.openingHours;
-  }
+  }/*
+  sumarContador():number{
+    this.count+=1;
+    return this.count;
+  }*/
 }

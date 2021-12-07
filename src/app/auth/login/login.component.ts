@@ -16,16 +16,17 @@ export class LoginComponent {
   });
   constructor(private authSvc: AuthService, private router: Router) {}
 
-  /*async onGoogleLogin() {
+  async onGoogleLogin() {
     try {
       const user = await this.authSvc.loginGoogle();
       if (user) {
-        this.checkUserIsVerified(user);
+        //this.checkUserIsVerified(user);
+        this.router.navigate(['/']);
       }
     } catch (error) {
       console.log(error);
     }
-  }*/
+  }
 
   async onLogin() {
     const { email, password } = this.loginForm.value;

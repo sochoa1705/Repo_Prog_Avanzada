@@ -16,8 +16,8 @@ export class DataService {
     return this.http.get<Store[]>(`${this.apiURL}/stores`)
   }
   //Cambio
-  getOrders(): Observable<Order[]> {
-    return this.http.get<Order[]>(`${this.apiURL}/orders`);
+  getOrders(correo:string): Observable<Order[]> {
+    return this.http.get<Order[]>(`${this.apiURL}/orders/?email=${correo}`);
   }
   //
   saveOrder(order: Order): Observable<Order> {

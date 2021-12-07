@@ -1,12 +1,18 @@
 .container {
   margin: 1rem 5px 0 5px;
-  background-image: radial-gradient(
+  /*background-image: radial-gradient(
     circle at 50% -20.71%,
     #978d76 0,
     #807751 25%,
     #66612a 50%,
     #494c00 75%,
     #2e3a00 100%
+  );*/
+  background-image: radial-gradient(
+    circle at 100% 0%,
+    #423f2f 0,
+    #1c1e24 50%,
+    #00001a 100%
   );
   color: #ffff;
   border-radius: 5px;

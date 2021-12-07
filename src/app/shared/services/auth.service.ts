@@ -87,6 +87,11 @@ export class AuthService {
     return this.afAuth.authState.pipe(first()).toPromise();
   }
 
+  //Obtener Nombre y foto de Usuario
+  getUserAuth(){
+    return this.afAuth.authState;
+  }
+
   /*private updateUserData(user: User) {
     const userRef: AngularFirestoreDocument<User> = this.afs.doc(
       `users/${user.uid}`

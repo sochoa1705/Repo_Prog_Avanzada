@@ -10,7 +10,7 @@ import { Observable } from 'rxjs';
   selector: 'app-products',
   template: `
   <div class="container">
-    <h1 class="title">Bienvenido! Escoga sus Productos</h1>
+    <h1 class="title">Bienvenido!! Estos son los productos que oferta la Tienda</h1>
   </div>
   <section class="products">
     <app-product

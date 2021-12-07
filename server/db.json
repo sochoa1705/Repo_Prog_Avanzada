@@ -57,8 +57,8 @@
       "price": 31,
       "description": "Elimina las zonas muertas de Wi-Fi con una robusta extensión Wi-Fi con velocidades combinadas de hasta 750Mbps Funciona sobre las bandas de 2.4GHz (300Mbps) y 5GHz (433Mbps) para una experiencia inalámbrica más estable",
       "categoryId": 2,
-      "stock": 3,
-      "dirImg":"https://boyaca.com/wp-content/themes/boyaca/vista/imagenes/graf_zoom/37384.jpg"
+      "stock": 0,
+      "dirImg": "https://boyaca.com/wp-content/themes/boyaca/vista/imagenes/graf_zoom/37384.jpg"
     },
     {
       "id": 2,
@@ -66,8 +66,8 @@
       "price": 17,
       "description": "Recibe notificaciones al instante cada vez que se activa un sensor o una alarma.",
       "categoryId": 2,
-      "stock": 3,
-      "dirImg":"https://store.telalca.com/wp-content/uploads/2020/12/1027968981.jpeg"
+      "stock": 0,
+      "dirImg": "https://store.telalca.com/wp-content/uploads/2020/12/1027968981.jpeg"
     },
     {
       "id": 3,
@@ -75,8 +75,8 @@
       "price": 10,
       "description": "Más de 16 millones de combinaciones de colores para escoger. Ilumina al instante cualquier habitación o transforma el ambiente directamente desde tu dispositivo inteligente",
       "categoryId": 2,
-      "stock": 10,
-      "dirImg":"https://storeech.com/wp-content/uploads/Foco-led-wifi-multicolor.png"
+      "stock": 7,
+      "dirImg": "https://storeech.com/wp-content/uploads/Foco-led-wifi-multicolor.png"
     },
     {
       "id": 4,
@@ -84,8 +84,8 @@
       "price": 50,
       "description": "Pídele a Alexa que reproduzca música, responda a preguntas, narre las noticias, consulte la previsión del tiempo, configure alarmas, controle dispositivos de Hogar compatibles.",
       "categoryId": 2,
-      "stock": 19,
-      "dirImg":"https://http2.mlstatic.com/D_NQ_NP_614469-MEC43692360493_102020-O.jpg"
+      "stock": 18,
+      "dirImg": "https://http2.mlstatic.com/D_NQ_NP_614469-MEC43692360493_102020-O.jpg"
     },
     {
       "id": 5,
@@ -93,8 +93,8 @@
       "price": 399,
       "description": "Video 5K: grabe videos asombrosos con una resolución de hasta 5K, perfecta para mantener los detalles incluso al hacer zoom",
       "categoryId": 2,
-      "stock": 29,
-      "dirImg":"https://static.gopro.com/assets/blta2b8522e5372af40/blt1356ab615ae421a1/613f94ba38fe8025350670ad/header-camera-menu-h10b-1920-2x.png"
+      "stock": 28,
+      "dirImg": "https://static.gopro.com/assets/blta2b8522e5372af40/blt1356ab615ae421a1/613f94ba38fe8025350670ad/header-camera-menu-h10b-1920-2x.png"
     },
     {
       "id": 6,
@@ -103,7 +103,7 @@
       "description": "con frecuencia de actualización ultrarrápida de 280 * Hz diseñado para jugadores profesionales y juegos inmersivos",
       "categoryId": 3,
       "stock": 15,
-      "dirImg":"https://m.media-amazon.com/images/I/71nFX3tkI2L._AC_SL1500_.jpg"
+      "dirImg": "https://m.media-amazon.com/images/I/71nFX3tkI2L._AC_SL1500_.jpg"
     },
     {
       "id": 7,
@@ -112,7 +112,7 @@
       "description": "Está repleto de muchas funciones de juego útiles para brindar a los usuarios una experiencia satisfactoria. Entre ellas se incluyen la compatibilidad con NVIDIA G-SYNC, una rápida frecuencia de actualización de 240 Hz y una pantalla curva 1500R que lo coloca justo en el medio de la acción.",
       "categoryId": 3,
       "stock": 10,
-      "dirImg":"https://images.samsung.com/is/image/samsung/latin-curved-cf591-lc27f591fdlxzp-001-front-white?$624_624_PNG$"
+      "dirImg": "https://images.samsung.com/is/image/samsung/latin-curved-cf591-lc27f591fdlxzp-001-front-white?$624_624_PNG$"
     },
     {
       "id": 8,
@@ -121,125 +121,30 @@
       "description": "Suscripción por 12 meses para una persona (elija Office 365 hogar para obtener una suscripción de 1 persona).1TB de almacenamiento en la nube de OneDrive",
       "categoryId": 3,
       "stock": 10,
-      "dirImg":"https://netbuyecuador.com/pub/media/catalog/product/cache/4d984e1db8afb9523aa71649c4c353de/o/f/office-365-personal.jpeg"
+      "dirImg": "https://netbuyecuador.com/pub/media/catalog/product/cache/4d984e1db8afb9523aa71649c4c353de/o/f/office-365-personal.jpeg"
     }
   ],
   "orders": [
     {
       "id": 1,
       "name": "Omar Mejia",
-      "date": "01/12/1995",
+      "date": "01/12/2021",
       "shippingAddress": "Av. de la Granvia de Hospitalet, 115",
       "city": "Barcelona",
+      "email": "omardevaluado08@gmail.com",
       "isDelivery": true
     },
     {
-      "name": "Mejia",
-      "shippingAddress": "Quito Guamani",
-      "city": "Quito",
-      "date": "12/11/2021",
-      "isDelivery": true,
-      "id": 2
-    },
-    {
-      "name": "Dominicode",
-      "store": {
-        "id": 3,
-        "name": "Chambers and West Broadway",
-        "address": "125 Chambers Street",
-        "city": "New York",
-        "openingHours": "10:00 - 14:00 and 17:00 - 20:30"
-      },
-      "date": "12/11/2021",
-      "isDelivery": false,
-      "id": 3
-    },
-    {
-      "name": "Dominicode",
-      "store": {
-        "id": 1,
-        "name": "Park Row at Beekman St",
-        "address": "38 Park Row",
-        "city": "New York",
-        "openingHours": "10:00 - 14:00 and 17:00 - 20:30"
-      },
-      "date": "12/11/2021",
-      "isDelivery": false,
-      "id": 4
-    },
-    {
-      "name": "Dominicode",
-      "store": {
-        "id": 2,
-        "name": "Store Alcalá",
-        "address": "Calle de Alcalá, 21",
-        "city": "Madrid",
-        "openingHours": "10:00 - 14:00 and 17:00 - 20:30"
-      },
-      "date": "12/11/2021",
-      "isDelivery": false,
-      "id": 5
-    },
-    {
-      "name": "Mejia",
-      "shippingAddress": "Quito Guamani",
-      "city": "Quito",
-      "date": "12/11/2021",
-      "isDelivery": true,
-      "id": 6
-    },
-    {
+      "id": 2,
       "name": "Omar Mejia",
-      "store": {
-        "id": 2,
-        "name": "Store Alcalá",
-        "address": "Calle de Alcalá, 21",
-        "city": "Madrid",
-        "openingHours": "10:00 - 14:00 and 17:00 - 20:30"
-      },
-      "date": "12/11/2021",
-      "isDelivery": false,
-      "id": 7
+      "date": "05/12/2021",
+      "shippingAddress": "Av. de la Granvia de Hospitalet, 115",
+      "city": "Barcelona",
+      "email": "omardevaluado08@gmail.com",
+      "isDelivery": true
     },
     {
-      "name": "Mejia",
-      "shippingAddress": "Quito Guamani",
-      "city": "Quito",
-      "date": "12/11/2021",
-      "isDelivery": true,
-      "id": 8
-    },
-    {
-      "name": "Mejia",
-      "store": {
-        "id": 4,
-        "name": "Covent Garden - Russell St",
-        "address": "10 Russell Street",
-        "city": "London",
-        "openingHours": "10:00 - 14:00 and 17:00 - 20:30"
-      },
-      "date": "12/11/2021",
-      "isDelivery": false,
-      "id": 9
-    },
-    {
-      "name": "Mejia",
-      "shippingAddress": "Quito Guamani",
-      "city": "Quito",
-      "date": "12/11/2021",
-      "isDelivery": true,
-      "id": 10
-    },
-    {
-      "name": "Mejia",
-      "shippingAddress": "Quito Guamani",
-      "city": "Quito",
-      "date": "12/11/2021",
-      "isDelivery": true,
-      "id": 11
-    },
-    {
-      "name": "Mejia",
+      "name": "Alex Mejia",
       "store": {
         "id": 2,
         "name": "Tienda Boutique",
@@ -247,33 +152,10 @@
         "city": "Latacunga",
         "openingHours": "10:00 - 14:00 and 17:00 - 20:30"
       },
-      "date": "12/11/2021",
+      "date": "7/12/2021",
+      "email": "alex@gmail.com",
       "isDelivery": false,
-      "id": 12
-    },
-    {
-      "name": "Mejia",
-      "shippingAddress": "Quito Guamani",
-      "city": "Quito",
-      "date": "12/11/2021",
-      "isDelivery": true,
-      "id": 13
-    },
-    {
-      "name": "Mejia ",
-      "shippingAddress": "Quito Guamani",
-      "city": "Quito",
-      "date": "12/11/2021",
-      "isDelivery": true,
-      "id": 14
-    },
-    {
-      "name": "Mejia",
-      "shippingAddress": "Quito Guamani",
-      "city": "Quito",
-      "date": "12/11/2021",
-      "isDelivery": true,
-      "id": 15
+      "id": 3
     }
   ],
   "detailsOrders": [
@@ -290,53 +172,8 @@
     },
     {
       "details": [],
-      "orderId": 4,
+      "orderId": 3,
       "id": 3
-    },
-    {
-      "details": [],
-      "orderId": 5,
-      "id": 4
-    },
-    {
-      "details": [],
-      "orderId": 6,
-      "id": 5
-    },
-    {
-      "details": [],
-      "orderId": 7,
-      "id": 6
-    },
-    {
-      "details": [],
-      "orderId": 8,
-      "id": 7
-    },
-    {
-      "details": [],
-      "orderId": 9,
-      "id": 8
-    },
-    {
-      "details": [],
-      "orderId": 10,
-      "id": 9
-    },
-    {
-      "details": [],
-      "orderId": 11,
-      "id": 10
-    },
-    {
-      "details": [],
-      "orderId": 12,
-      "id": 11
-    },
-    {
-      "details": [],
-      "orderId": 15,
-      "id": 12
     }
   ]
 }
