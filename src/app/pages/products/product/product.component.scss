@@ -6,25 +6,21 @@
   min-height: 10rem;
   min-width: 33rem;
   background-image: radial-gradient(
-    circle at 50% 50%,
-    #ffeacd 0,
-    #f9e3c0 10%,
-    #eddcb1 20%,
-    #ded4a2 30%,
-    #cdcc92 40%,
-    #b9c382 50%,
-    #a3bb74 60%,
-    #8cb36a 70%,
-    #73ad63 80%,
-    #58a761 90%,
-    #38a261 100%
+    circle at 50% -20.71%,
+    #dedfe0 0,
+    #9aa9cd 50%,
+    #4b77b9 100%
   );
+  //box-shadow: 2px 2px #0f1b3c;
+  box-shadow: 1px 1px 2px 1px #000;
 }
 img {
   float: left;
   margin-right: 10px;
   border-radius: 5px;
   min-width: 50px;
+  border: 2px outset #cccccc;
+  background-color: #cccccc;
 }
 #derecha {
   float: right;
@@ -36,6 +32,9 @@ img {
 .mat-card-actions {
   margin: 0;
 }
+.descripcion {
+  text-align: justify;
+}
 
 .mat-card > .mat-card-actions:last-child {
   margin-bottom: 0;
@@ -44,4 +43,8 @@ img {
 
 button {
   width: 100%;
+  &:hover {
+    background-color: #0e1834;
+    transition: background-color 0.5s ease-in-out;
+  }
 }

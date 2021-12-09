@@ -2,7 +2,9 @@
   <img src="{{ product.dirImg }}" />
   <div id="derecha">
     <mat-card-title>{{ product.name }}</mat-card-title>
-    <mat-card-content>{{ product.description }}</mat-card-content>
+    <mat-card-content class="descripcion">{{
+      product.description
+    }}</mat-card-content>
     <mat-card-actions>
       <button
         mat-flat-button

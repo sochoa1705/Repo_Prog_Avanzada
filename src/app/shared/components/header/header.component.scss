@@ -1,23 +1,9 @@
 .navbar {
-  /*display: flex;
-  justify-content: space-between;
-  left: 0;
-  position: fixed;
-  top: 0;
-  z-index: 1;*/
   background-image: radial-gradient(
-    circle at 95.45% 104.17%,
-    #c97d35 0,
-    #c57139 10%,
-    #bc633b 20%,
-    #ae543c 30%,
-    #9b453a 40%,
-    #833535 50%,
-    #6b272f 60%,
-    #561c29 70%,
-    #441323 80%,
-    #360d1f 90%,
-    #2b091b 100%
+    circle at 50% -20.71%,
+    #50504f 0,
+    #1b253f 50%,
+    #00002f 100%
   );
 }
 
@@ -33,8 +19,9 @@ a {
   display: flex;
   padding: 0.1rem 0.5rem;
   transition: background-color 0.25s ease-in-out;
+  color: #fff;
 
   &:hover {
-    background-color: #2b091b;
+    background-color: #65976b;
   }
 }

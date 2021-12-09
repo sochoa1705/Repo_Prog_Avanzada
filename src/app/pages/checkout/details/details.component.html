@@ -1,14 +1,14 @@
 <div class="container">
-  <table class="table">
-    <thead>
-      <tr>
-        <th width="60%">Item</th>
-        <th>Cantidad</th>
-        <th>Precio Unitario</th>
-        <th>Sub total</th>
-      </tr>
-    </thead>
-    <tbody>
+  <div class="table-responsive table-sm">
+    <table class="table table-hover table-bordered table-sm table-light">
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Cantidad</th>
+          <th>Precio Unitario</th>
+          <th>Sub total</th>
+        </tr>
+      </thead>
       <tr *ngFor="let item of cart$ | async">
         <td>{{ item.name }}</td>
         <td>{{ item.qty }}</td>
@@ -21,7 +21,6 @@
           <b>{{ total$ | async | currency }}</b>
         </td>
       </tr>
-    </tbody>
-  </table>
-  <!--<p class="total">Total: {{ total$ | async | currency }}</p>-->
+    </table>
+  </div>
 </div>

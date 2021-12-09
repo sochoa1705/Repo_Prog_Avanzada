@@ -9,9 +9,7 @@ import { Observable } from 'rxjs';
 @Component({
   selector: 'app-products',
   template: `
-  <div class="container">
     <h1 class="title">Bienvenido!! Estos son los productos que oferta la Tienda</h1>
-  </div>
   <section class="products">
     <app-product
       (addToCartClick)="addToCart($event)"
