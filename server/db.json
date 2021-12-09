@@ -57,7 +57,7 @@
       "price": 31,
       "description": "Elimina las zonas muertas de Wi-Fi con una robusta extensión Wi-Fi con velocidades combinadas de hasta 750Mbps Funciona sobre las bandas de 2.4GHz (300Mbps) y 5GHz (433Mbps) para una experiencia inalámbrica más estable",
       "categoryId": 2,
-      "stock": 0,
+      "stock": 44,
       "dirImg": "https://boyaca.com/wp-content/themes/boyaca/vista/imagenes/graf_zoom/37384.jpg"
     },
     {
@@ -66,7 +66,7 @@
       "price": 17,
       "description": "Recibe notificaciones al instante cada vez que se activa un sensor o una alarma.",
       "categoryId": 2,
-      "stock": 0,
+      "stock": 41,
       "dirImg": "https://store.telalca.com/wp-content/uploads/2020/12/1027968981.jpeg"
     },
     {
@@ -75,7 +75,7 @@
       "price": 10,
       "description": "Más de 16 millones de combinaciones de colores para escoger. Ilumina al instante cualquier habitación o transforma el ambiente directamente desde tu dispositivo inteligente",
       "categoryId": 2,
-      "stock": 7,
+      "stock": 49,
       "dirImg": "https://storeech.com/wp-content/uploads/Foco-led-wifi-multicolor.png"
     },
     {
@@ -84,7 +84,7 @@
       "price": 50,
       "description": "Pídele a Alexa que reproduzca música, responda a preguntas, narre las noticias, consulte la previsión del tiempo, configure alarmas, controle dispositivos de Hogar compatibles.",
       "categoryId": 2,
-      "stock": 18,
+      "stock": 48,
       "dirImg": "https://http2.mlstatic.com/D_NQ_NP_614469-MEC43692360493_102020-O.jpg"
     },
     {
@@ -93,7 +93,7 @@
       "price": 399,
       "description": "Video 5K: grabe videos asombrosos con una resolución de hasta 5K, perfecta para mantener los detalles incluso al hacer zoom",
       "categoryId": 2,
-      "stock": 28,
+      "stock": 50,
       "dirImg": "https://static.gopro.com/assets/blta2b8522e5372af40/blt1356ab615ae421a1/613f94ba38fe8025350670ad/header-camera-menu-h10b-1920-2x.png"
     },
     {
@@ -102,7 +102,7 @@
       "price": 600,
       "description": "con frecuencia de actualización ultrarrápida de 280 * Hz diseñado para jugadores profesionales y juegos inmersivos",
       "categoryId": 3,
-      "stock": 15,
+      "stock": 50,
       "dirImg": "https://m.media-amazon.com/images/I/71nFX3tkI2L._AC_SL1500_.jpg"
     },
     {
@@ -111,7 +111,7 @@
       "price": 538,
       "description": "Está repleto de muchas funciones de juego útiles para brindar a los usuarios una experiencia satisfactoria. Entre ellas se incluyen la compatibilidad con NVIDIA G-SYNC, una rápida frecuencia de actualización de 240 Hz y una pantalla curva 1500R que lo coloca justo en el medio de la acción.",
       "categoryId": 3,
-      "stock": 10,
+      "stock": 50,
       "dirImg": "https://images.samsung.com/is/image/samsung/latin-curved-cf591-lc27f591fdlxzp-001-front-white?$624_624_PNG$"
     },
     {
@@ -120,7 +120,7 @@
       "price": 52,
       "description": "Suscripción por 12 meses para una persona (elija Office 365 hogar para obtener una suscripción de 1 persona).1TB de almacenamiento en la nube de OneDrive",
       "categoryId": 3,
-      "stock": 10,
+      "stock": 50,
       "dirImg": "https://netbuyecuador.com/pub/media/catalog/product/cache/4d984e1db8afb9523aa71649c4c353de/o/f/office-365-personal.jpeg"
     }
   ],
@@ -135,16 +135,53 @@
       "isDelivery": true
     },
     {
-      "id": 2,
-      "name": "Omar Mejia",
-      "date": "05/12/2021",
-      "shippingAddress": "Av. de la Granvia de Hospitalet, 115",
-      "city": "Barcelona",
-      "email": "omardevaluado08@gmail.com",
-      "isDelivery": true
+      "name": "Mejia",
+      "shippingAddress": "Quito Guamani",
+      "city": "Quito",
+      "date": "9/12/2021",
+      "email": "alex@gmail.com",
+      "isDelivery": true,
+      "id": 2
     },
     {
-      "name": "Alex Mejia",
+      "name": "Mejia",
+      "store": {
+        "id": 1,
+        "name": "Taranis",
+        "address": "La Basilica",
+        "city": "Quito",
+        "openingHours": "10:00 - 14:00 y 17:00 - 20:30"
+      },
+      "date": "9/12/2021",
+      "email": "alex@gmail.com",
+      "isDelivery": false,
+      "id": 3
+    },
+    {
+      "name": "Alex Mejía",
+      "shippingAddress": "Guamani Bajo",
+      "city": "Quito",
+      "date": "9/12/2021",
+      "email": "alex@gmail.com",
+      "isDelivery": true,
+      "id": 4
+    },
+    {
+      "name": "Alex",
+      "store": {
+        "id": 3,
+        "name": "Litte Girls",
+        "address": "125 Chambers Street",
+        "city": "Ambato",
+        "openingHours": "10:00 - 14:00 and 17:00 - 20:30"
+      },
+      "date": "9/12/2021",
+      "email": "alex@gmail.com",
+      "isDelivery": false,
+      "id": 5
+    },
+    {
+      "name": "Omar Mejia",
       "store": {
         "id": 2,
         "name": "Tienda Boutique",
@@ -152,28 +189,140 @@
         "city": "Latacunga",
         "openingHours": "10:00 - 14:00 and 17:00 - 20:30"
       },
-      "date": "7/12/2021",
-      "email": "alex@gmail.com",
+      "date": "9/12/2021",
+      "email": "omardevaluado08@gmail.com",
       "isDelivery": false,
-      "id": 3
+      "id": 6
+    },
+    {
+      "name": "Omar Mejía",
+      "store": {
+        "id": 3,
+        "name": "Litte Girls",
+        "address": "125 Chambers Street",
+        "city": "Ambato",
+        "openingHours": "10:00 - 14:00 and 17:00 - 20:30"
+      },
+      "date": "9/12/2021",
+      "email": "omardevaluado08@gmail.com",
+      "isDelivery": false,
+      "id": 7
     }
   ],
   "detailsOrders": [
     {
-      "id": 1,
+      "details": [
+        {
+          "productId": 1,
+          "productName": "EXTENSOR WIFI TPLINK AC 750 MBPS WALLPLUG 2 ANTENAS",
+          "quantity": 1,
+          "productPrice": 31
+        }
+      ],
       "orderId": 1,
-      "quantity": 10,
-      "productName": "Product name"
+      "id": 1
     },
     {
-      "details": [],
+      "details": [
+        {
+          "productId": 1,
+          "productName": "EXTENSOR WIFI TPLINK AC 750 MBPS WALLPLUG 2 ANTENAS",
+          "quantity": 1,
+          "productPrice": 31
+        }
+      ],
       "orderId": 2,
       "id": 2
     },
     {
-      "details": [],
+      "details": [
+        {
+          "productId": 1,
+          "productName": "EXTENSOR WIFI TPLINK AC 750 MBPS WALLPLUG 2 ANTENAS",
+          "quantity": 1,
+          "productPrice": 31
+        },
+        {
+          "productId": 2,
+          "productName": "NEXXT - SOLUTIONS CONNECTIVITY - CONTACT SENSOR",
+          "quantity": 1,
+          "productPrice": 17
+        }
+      ],
       "orderId": 3,
       "id": 3
+    },
+    {
+      "details": [
+        {
+          "productId": 2,
+          "productName": "NEXXT - SOLUTIONS CONNECTIVITY - CONTACT SENSOR",
+          "quantity": 1,
+          "productPrice": 17
+        }
+      ],
+      "orderId": 4,
+      "id": 4
+    },
+    {
+      "details": [
+        {
+          "productId": 2,
+          "productName": "NEXXT - SOLUTIONS CONNECTIVITY - CONTACT SENSOR",
+          "quantity": 2,
+          "productPrice": 17
+        }
+      ],
+      "orderId": 5,
+      "id": 5
+    },
+    {
+      "details": [
+        {
+          "productId": 1,
+          "productName": "EXTENSOR WIFI TPLINK AC 750 MBPS WALLPLUG 2 ANTENAS",
+          "quantity": 1,
+          "productPrice": 31
+        },
+        {
+          "productId": 2,
+          "productName": "NEXXT - SOLUTIONS CONNECTIVITY - CONTACT SENSOR",
+          "quantity": 1,
+          "productPrice": 17
+        }
+      ],
+      "orderId": 6,
+      "id": 6
+    },
+    {
+      "details": [
+        {
+          "productId": 1,
+          "productName": "EXTENSOR WIFI TPLINK AC 750 MBPS WALLPLUG 2 ANTENAS",
+          "quantity": 1,
+          "productPrice": 31
+        },
+        {
+          "productId": 4,
+          "productName": "AMAZON ALEXA ECHO DOT 3RA GENERACIÓN",
+          "quantity": 1,
+          "productPrice": 50
+        },
+        {
+          "productId": 2,
+          "productName": "NEXXT - SOLUTIONS CONNECTIVITY - CONTACT SENSOR",
+          "quantity": 1,
+          "productPrice": 17
+        },
+        {
+          "productId": 3,
+          "productName": "NEXT BOMBILLO - CONEXION WI-FI -BOMBILLO MULTICOLOR",
+          "quantity": 1,
+          "productPrice": 10
+        }
+      ],
+      "orderId": 7,
+      "id": 7
     }
   ]
 }

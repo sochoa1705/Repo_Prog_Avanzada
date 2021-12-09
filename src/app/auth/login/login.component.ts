@@ -3,7 +3,6 @@ import { Component } from '@angular/core';
 
 import { AuthService } from 'src/app/shared/services/auth.service';
 import { Router } from '@angular/router';
-import { User } from 'src/app/shared/models/user.interface';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -28,28 +27,20 @@ export class LoginComponent {
     }
   }
 
-  async onLogin() {
-    const { email, password } = this.loginForm.value;
-    try {
-      const user = await this.authSvc.login(email, password);
-      if (user) {
-       // this.checkUserIsVerified(user);
-       this.router.navigate(['']);
+  async onLogin(){
+    const {email, password}=this.loginForm.value;
+    try{
+      const user= await this.authSvc.login(email, password);
+      if(user && user.user?.emailVerified){
+        this.router.navigate(['/products']);
+      }else if(user){
+        this.router.navigate(['/verification-email']);
       }else{
-        alert("Usuario o Password Incorrectos!!")
+        alert("Usuario o contraseña incorrectas")
+        //this.router.navigate(['/register']);
       }
-    } catch (error) {
-      console.log(error);
-    }
-  }
-
-  private checkUserIsVerified(user: User) {
-    if (user && user.emailVerified) {
-      this.router.navigate(['/home']);
-    } else if (user) {
-      this.router.navigate(['/verification-email']);
-    } else {
-      this.router.navigate(['/register']);
+    }catch(error){
+        return console.log(error);
     }
   }
 }

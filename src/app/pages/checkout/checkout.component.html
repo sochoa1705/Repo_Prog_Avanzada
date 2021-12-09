@@ -34,6 +34,7 @@
           [(ngModel)]="model.shippingAddress"
           name="shippingAddress"
           #shippingAddress="ngModel"
+          [required]="true"
         />
       </mat-form-field>
       <mat-form-field class="form__element">
@@ -43,13 +44,19 @@
           [(ngModel)]="model.city"
           name="city"
           #city="ngModel"
+          [required]="true"
         />
       </mat-form-field>
     </ng-container>
     <ng-template #showStores>
       <mat-form-field class="form__element">
         <mat-label>Select me</mat-label>
-        <mat-select name="store" #store="ngModel" [(ngModel)]="model.store">
+        <mat-select
+          name="store"
+          #store="ngModel"
+          [(ngModel)]="model.store"
+          [required]="true"
+        >
           <mat-option [value]="tienda" *ngFor="let tienda of stores">
             {{ tienda.name }} - {{ tienda.openingHours }}
           </mat-option>

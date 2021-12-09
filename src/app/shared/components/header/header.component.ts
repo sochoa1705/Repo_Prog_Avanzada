@@ -11,7 +11,7 @@ import { Observable } from 'rxjs';
 export class HeaderComponent {
   public user$:Observable<any>=this.authSvc.afAuth.user;
 
-  constructor(public authSvc: AuthService,private router: Router) { }
+  constructor(private authSvc: AuthService,private router: Router) { }
 
   goToCheckout(): void {
     this.router.navigate(['/checkout']);

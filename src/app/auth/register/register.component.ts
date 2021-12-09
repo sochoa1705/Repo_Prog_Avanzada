@@ -23,7 +23,7 @@ export class RegisterComponent {
       const user = await this.authSvc.register(email, password);
       if (user) {
         //this.checkUserIsVerified(user);
-        this.router.navigate(['']);
+        this.router.navigate(['/verification-email']);
       }
     } catch (error) {
       console.log(error);

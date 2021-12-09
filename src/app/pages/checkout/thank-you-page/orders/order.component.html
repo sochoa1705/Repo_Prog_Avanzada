@@ -1,5 +1,4 @@
-<mat-card class="card">
-  <!--<mat-card-title>Pedido {{ sumarContador() }}</mat-card-title>-->
+<mat-card class="card" *ngIf="user$ | async as user">
   <mat-card-content>
     <table [hidden]="order.isDelivery === false">
       <thead>
@@ -70,5 +69,25 @@
         </tr>
       </tbody>
     </table>
+    <!--<table>
+      <thead>
+        <tr>
+          <th colspan="2">Datos del Pedido</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Producto:</td>
+          <td>Unidades:</td>
+          <td>Precio:</td>
+        </tr>
+        <tr>
+          <td>{{ detailsOrder }}</td>
+          <td>{{ quantity }}</td>
+          <td>{{ productPrice }}</td>
+        </tr>
+      </tbody>
+    </table>-->
+    <!--<app-detailOrder [orderId]="order.id"></app-detailOrder>-->
   </mat-card-content>
 </mat-card>

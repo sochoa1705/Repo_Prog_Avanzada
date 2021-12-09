@@ -3,6 +3,7 @@ import { Product } from '../interfaces/product.interface';
 import { Observable } from 'rxjs';
 
 import { AuthService } from 'src/app/shared/services/auth.service'
+
 @Component({
   selector: 'app-product',
   templateUrl: './product.component.html',
@@ -11,7 +12,7 @@ import { AuthService } from 'src/app/shared/services/auth.service'
 })
 export class ProductComponent {
   public user$:Observable<any>=this.authSvc.afAuth.user;
-  constructor(public authSvc: AuthService) {
+  constructor(private authSvc: AuthService) {
   }
   @Input() product!: Product;
   @Output() addToCartClick = new EventEmitter<Product>();

@@ -1,7 +1,7 @@
+import { DetailsOrder,Order} from './../interfaces/order.interface';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Order, DetailsOrder } from '../interfaces/order.interface';
 import { Store } from '../interfaces/stores.interface';
 
 @Injectable({
@@ -28,5 +28,11 @@ export class DataService {
     return this.http.post<DetailsOrder>(`${this.apiURL}/detailsOrders`, details);
   }
 
-
+  findDetailsOrderByOrderId(orderId:number): Observable<DetailsOrder> {
+    console.log("el id es:",orderId);
+    return this.http.get<DetailsOrder>(`${this.apiURL}/detailsOrders/?id=${orderId}`);
+  }
+  getDetailsOrderByOrderId(): Observable<DetailsOrder[]> {
+    return this.http.get<DetailsOrder[]>(`${this.apiURL}/detailsOrders`);
+  }
 }

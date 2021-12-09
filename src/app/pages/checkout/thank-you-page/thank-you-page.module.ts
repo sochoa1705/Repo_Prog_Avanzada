@@ -1,3 +1,4 @@
+import { DetailOrderComponent } from './orders/DetailOrder/detailOrder.component';
 import { OrderComponent } from './orders/order.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -9,7 +10,8 @@ import { MaterialModule } from 'src/app/material.module';
 @NgModule({
   declarations: [
     ThankYouPageComponent,
-    OrderComponent
+    OrderComponent,
+    DetailOrderComponent
   ],
   imports: [
     CommonModule,

@@ -30,6 +30,7 @@ export class CheckoutComponent implements OnInit {
   cart: Product[] = [];
   stores: Store[] = [];
   isChangPage = false;
+  details:Details[]=[];
 
 
 
@@ -69,9 +70,9 @@ export class CheckoutComponent implements OnInit {
       .pipe(
         tap(res => console.log('Order ->', res)),
         switchMap(({ id: orderId }) => {
-          const details = this.prepareDetails();
           this.isChangPage = true;
-          return this.dataSvc.saveDetailsOrder({ details, orderId });
+          const details:Details[]=this.details;
+          return this.dataSvc.saveDetailsOrder({ details , orderId});
         }),
         tap(() => this.shoppingCartSvc.resetCart()),
         tap(() => this.router.navigate(['/checkout/thank-you-page']))
@@ -90,21 +91,17 @@ export class CheckoutComponent implements OnInit {
     return new Date().toLocaleDateString();
   }
 
-  private prepareDetails(): Details[] {
-    const details: Details[] = [];
+  private prepareDetails(): void {
     this.cart.forEach((product: Product) => {
-      const { id: productId, name: productName, qty: quantity, stock } = product;
+      const { id: productId, name: productName, qty: quantity, stock,price:productPrice} = product;
       const updateStock = (stock - quantity);
 
       this.productsSvc.updateStock(productId, updateStock)
         .pipe(
-          tap(() => details.push({ productId, productName, quantity }))
+          tap(() => this.details.push({ productId, productName, quantity,productPrice }))
         )
         .subscribe()
-
-
     })
-    return details;
   }
 
   private getDataCart(): void {
@@ -127,4 +124,3 @@ export class CheckoutComponent implements OnInit {
       .subscribe()
   }
 }
-

@@ -1,0 +1,54 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  max-width: 25rem;
+  min-height: 10rem;
+  min-width: 25rem;
+  background-image: radial-gradient(
+    circle at 50% 50%,
+    #ffeacd 0,
+    #f9e3c0 10%,
+    #eddcb1 20%,
+    #ded4a2 30%,
+    #cdcc92 40%,
+    #b9c382 50%,
+    #a3bb74 60%,
+    #8cb36a 70%,
+    #73ad63 80%,
+    #58a761 90%,
+    #38a261 100%
+  );
+  text-align: center;
+}
+
+.mat-card-title {
+  line-height: 1.2;
+}
+
+.mat-card-actions {
+  margin: 0;
+}
+
+.mat-card > .mat-card-actions:last-child {
+  margin-bottom: 0;
+  margin-top: auto;
+}
+
+button {
+  width: 100%;
+}
+
+table {
+  line-height: 1.2;
+  width: 100%;
+}
+
+th {
+  background-color: #244a24;
+  color: #fff;
+}
+
+td {
+  background-color: #eee;
+}

@@ -1,7 +1,10 @@
+import { Product } from 'src/app/pages/products/interfaces/product.interface';
+
 export interface Details {
   productId: number;
   productName: string;
   quantity: number;
+  productPrice: number;
 }
 
 export interface DetailsDelivery {

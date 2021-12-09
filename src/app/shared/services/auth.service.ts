@@ -14,22 +14,10 @@ export class AuthService {
   //public user$?: Observable<any>;
 
   constructor(public afAuth: AngularFireAuth) {
-    /*this.user$ = this.afAuth.authState.pipe(
-      switchMap((user) => {
-        if (user) {
-          return this.afs.doc<User>(`users/${user.uid}`).valueChanges();
-        }
-        return of(null);
-      })
-    );*/
   }
 
   async loginGoogle() {
-    try {/*
-      const { user } = await this.afAuth.signInWithPopup(
-        new auth.GoogleAuthProvider()
-      );
-      this.updateUserData(user);*/
+    try {
       return this.afAuth.signInWithPopup(new firebase.auth.GoogleAuthProvider);
     } catch (error) {
       return console.log(error);
@@ -69,6 +57,7 @@ export class AuthService {
         email,
         password
       );
+      await this.sendVerificationEmail();
       return user;
     } catch (error) {
       console.log(error);
@@ -92,20 +81,4 @@ export class AuthService {
     return this.afAuth.authState;
   }
 
-  /*private updateUserData(user: User) {
-    const userRef: AngularFirestoreDocument<User> = this.afs.doc(
-      `users/${user.uid}`
-    );
-
-    const data: User = {
-      uid: user.uid,
-      email: user.email,
-      emailVerified: user.emailVerified,
-      displayName: user.displayName,
-      photoURL: user.photoURL,
-      role: 'ADMIN',
-    };
-
-    return userRef.set(data, { merge: true });
-  }*/
 }
